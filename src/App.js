@@ -1,12 +1,10 @@
-import {Route, Routes} from "react-router-dom";
-import PostPage from "./PostPage";
+
+import Pageposts from "./pages/Pageposts";
 
 function App() {
   return (
     <div>
-        <Routes>
-            <Route path='/' element={<PostPage/>} />
-        </Routes>
+        <Pageposts/>
     </div>
   );
 }

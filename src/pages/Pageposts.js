@@ -1,13 +1,13 @@
 import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import {getPostsThunk, postNext, postPrevious} from "./store/postSlice";
+import {fetchPostsThunk, postNext, postPrevious} from "../store/postsSlice";
 
-const PostPage = () => {
+const Pageposts = () => {
     const dispatch= useDispatch()
     const {post, current, loading, error} = useSelector(state => state.post)
     console.log( post)
     useEffect(() => {
-        dispatch(getPostsThunk())
+        dispatch(fetchPostsThunk())
     }, []);
 
 
@@ -39,4 +39,4 @@ const PostPage = () => {
     );
 };
 
-export default PostPage;
+export default Pageposts;

@@ -1,5 +1,5 @@
 import {configureStore} from "@reduxjs/toolkit";
-import {postReduce} from "./postSlice";
+import {postReduce} from "./postsSlice";
 
 
 export const store = configureStore(
